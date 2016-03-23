@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Grades
 {
-    class GradeBook
+    public class GradeBook
     {
+        public String Name;  // just for reference type tests
+
         public static float MinimumGrade = 0;
         public static float MaximumGrade = 100;
         List<float> grades = new List<float>();
