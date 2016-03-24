@@ -8,8 +8,22 @@ namespace Grades
 {
     public class GradeBook
     {
-        public String Name;  // just for reference type tests
+        public String Name
+        {
+            get
+            {
+                return this._name;
+            }
+            set
+            {
+                if (!String.IsNullOrEmpty(value) )
+                {
+                   this._name = value;
+                }
+            }
+        }
 
+        public String Name;
         public static float MinimumGrade = 0;
         public static float MaximumGrade = 100;
         List<float> grades = new List<float>();
